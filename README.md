@@ -9,9 +9,7 @@ MirageOS is an immersive terminal-based game that simulates a hacking experience
 - Authentic terminal interface with command-line interactions
 - Progressive access flow: local guest → local root → local admin → company guest → company root
 - Clickable taskbar with functional UI elements (VPN toggle, WiFi panel, chat)
-- Psychological elements and plot twists
-- "NOOO I SHOULDN'T HAVE DONE THAT" moment when connecting without VPN
-- Old CRT terminal aesthetic with flicker effects
+
 
 ## 🚀 How to Play
 
@@ -86,16 +84,6 @@ MirageOS is an immersive terminal-based game that simulates a hacking experience
 
 You think you're tracing a criminal... but you're being framed into becoming them. The game progressively reveals that your actions are being monitored and manipulated, leading to a shocking revelation about your true identity.
 
-## 🔒 Security Features
-
-- Simulated VPN protection
-- Network security warnings
-- FBI trace detection system
-- Encrypted file system
-- Permission-based access control
-- Secure connection requirements
-
----
 
 Created as a terminal-based psychological hacking simulation game. Enjoy the journey of discovery and deception!
 
@@ -106,9 +94,3 @@ Created as a terminal-based psychological hacking simulation game. Enjoy the jou
 - No additional dependencies required
 - Local web server recommended for testing
 
-### Contributing
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
