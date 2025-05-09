@@ -313,7 +313,7 @@ function createDataTransferEffect(username) {
     
     // Create the main transfer text
     const transferText = document.createElement('div');
-    transferText.textContent = `TRANSFERRING DATA TO: ${username}`;
+    transferText.textContent = `TRANSFERRING DATA TO YOUR COMPUTER`;
     overlay.appendChild(transferText);
     
     // Add progress text

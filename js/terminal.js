@@ -143,7 +143,7 @@ const companyFileSystem = {
                                     'mirage_identity.sys': {
                                         type: 'file',
                                         encrypted: true,
-                                        content: '[ FBI DATABASE LOG ]\n> ID MATCH: [your_username]\n> CODENAME: MIRAGE\n> STATUS: ACTIVE THREAT',
+                                        content: '[ FBI DATABASE LOG ]\n> CODENAME: MIRAGE\n> STATUS: ACTIVE THREAT',
                                         permissions: 'rw-------'
                                     }
                                 },
@@ -670,7 +670,7 @@ function triggerFinalTwist() {
                 triggerFinalSequence(gameState.currentUser)
                     .then(() => {
                         // Add final laugh from the real Mirage
-                        const laughMessage = 'HAHAHA... Another one joins the network. Welcome, agent.';
+                        const laughMessage = 'Haha, so funny. Such a stupid person, thinking you could trace me. Now enjoy, the FBI’s coming for your crime... Wait, no. It’s my crime. It was a trap all along. Welcome to Mirage’s game.';
                         addToTerminal(laughMessage, 'highlight-text');
                         
                         // Disable further input
