@@ -1,0 +1,198 @@
+/* Terminal-specific CSS for MirageOS Terminal Game */
+
+/* Terminal Container */
+#terminal-container {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 50;
+}
+
+/* Terminal Output */
+#terminal-output {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.3;
+}
+
+/* Command Line */
+#command-line {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+#prompt {
+    color: var(--terminal-prompt);
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+#command-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--terminal-text);
+    font-size: 1em;
+    outline: none;
+    caret-color: var(--terminal-text);
+}
+
+/* Terminal Text Styles */
+.terminal-text {
+    margin-bottom: 5px;
+}
+
+.user-command {
+    color: var(--terminal-text);
+}
+
+.system-response {
+    color: #aaa;
+}
+
+.error-text {
+    color: var(--error);
+}
+
+.warning-text {
+    color: var(--warning);
+}
+
+.success-text {
+    color: #0f0;
+}
+
+.highlight-text {
+    color: #0ff;
+}
+
+.file-text {
+    color: #ff0;
+}
+
+.directory-text {
+    color: #0f0;
+}
+
+.executable-text {
+    color: #f0f;
+}
+
+/* Terminal Animations */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(30, end);
+}
+
+/* ASCII Art */
+.ascii-art {
+    font-family: monospace;
+    white-space: pre;
+    line-height: 1.2;
+    color: #0f0;
+    margin: 10px 0;
+}
+
+/* Chat Messages in Terminal */
+.chat-message {
+    border-left: 2px solid #0f0;
+    padding-left: 10px;
+    margin: 5px 0;
+    color: #0ff;
+}
+
+/* Chat Panel */
+#chat-messages {
+    padding: 10px;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+}
+
+.chat-message-item {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+.chat-sender {
+    font-weight: bold;
+    color: #0ff;
+}
+
+/* Terminal Scrollbar */
+#terminal-output::-webkit-scrollbar {
+    width: 8px;
+}
+
+#terminal-output::-webkit-scrollbar-track {
+    background: #111;
+}
+
+#terminal-output::-webkit-scrollbar-thumb {
+    background: #0f0;
+    border-radius: 4px;
+}
+
+#terminal-output::-webkit-scrollbar-thumb:hover {
+    background: #0c0;
+}
+
+/* Terminal Blink Effect */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+/* Terminal Loading Animation */
+.loading-dots:after {
+    content: '.';
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { content: '.'; }
+    33% { content: '..'; }
+    66% { content: '...'; }
+}
+
+/* FBI Warning Animation */
+.fbi-warning {
+    color: red;
+    font-weight: bold;
+    animation: warning-flash 0.5s infinite;
+}
+
+@keyframes warning-flash {
+    0%, 100% { color: red; }
+    50% { color: yellow; }
+}
+
+/* Self-destruct Animation */
+.self-destruct {
+    color: red;
+    font-weight: bold;
+    animation: self-destruct-flash 0.2s infinite;
+}
+
+@keyframes self-destruct-flash {
+    0%, 100% { color: red; }
+    50% { color: white; }
+}

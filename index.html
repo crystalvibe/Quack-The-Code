@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MirageOS - Terminal Hacking Simulation</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/terminal.css">
+</head>
+<body>
+    <!-- Top Taskbar -->
+    <div id="taskbar">
+        <div class="taskbar-item os-name">💻 Mirage OS v2.91</div>
+        <div class="taskbar-item clock">🕐 <span id="clock">01:42</span></div>
+        <div class="taskbar-item vpn clickable" id="vpn-toggle">🔒 VPN: <span id="vpn-status">OFF</span></div>
+        <div class="taskbar-item wifi clickable" id="wifi-panel">📶 WiFi: <span id="wifi-name">MirageNet</span></div>
+        <div class="taskbar-item chat clickable" id="chat-button">💬 Chat: <span id="chat-notification">0 msg</span></div>
+        <div class="taskbar-item menu clickable" id="menu-button">☰</div>
+    </div>
+
+    <!-- Terminal Container -->
+    <div id="terminal-container">
+        <div id="terminal-output"></div>
+        <div id="command-line">
+            <span id="prompt">/home/guest$ </span>
+            <input type="text" id="command-input" autofocus>
+        </div>
+    </div>
+
+    <!-- Chat Panel (Hidden by default) -->
+    <div id="chat-panel" class="side-panel">
+        <div class="panel-header">
+            <h3>🔐 MirageNet Encrypted Chatroom</h3>
+            <span class="close-panel">&times;</span>
+        </div>
+        <div id="chat-messages"></div>
+    </div>
+
+    <!-- WiFi Panel (Hidden by default) -->
+    <div id="wifi-settings-panel" class="side-panel">
+        <div class="panel-header">
+            <h3>📶 WiFi Networks</h3>
+            <span class="close-panel">&times;</span>
+        </div>
+        <div id="wifi-networks">
+            <div class="wifi-network selected">MirageNet</div>
+            <div class="wifi-network">FBI-Surveillance-Van</div>
+            <div class="wifi-network">Public_WiFi</div>
+            <div class="wifi-network">DarkWeb_Node</div>
+        </div>
+    </div>
+
+    <!-- Menu Panel (Hidden by default) -->
+    <div id="menu-panel" class="side-panel">
+        <div class="panel-header">
+            <h3>☰ Terminal Settings</h3>
+            <span class="close-panel">&times;</span>
+        </div>
+        <div id="menu-options">
+            <div class="menu-option" id="toggle-crt">Toggle CRT Effect</div>
+            <div class="menu-option" id="help-option">Help</div>
+            <div class="menu-option" id="about-option">About MirageOS</div>
+        </div>
+    </div>
+
+    <!-- CRT Overlay -->
+    <div id="crt-overlay"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/terminal.js"></script>
+    <script src="js/taskbar.js"></script>
+    <script src="js/game-flow.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
