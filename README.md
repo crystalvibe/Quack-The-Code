@@ -1,10 +1,11 @@
-# MirageOS - Terminal-Based Psychological Hacking Game
+# MirageOS - Terminal-Based Psychological Hacking Game using Amazon Q Developer
 
 A terminal-based psychological thriller hacking simulation game where you navigate through different access levels while uncovering a twisted plot.
 
-## 🎮 Game Overview
+> **💡 Looking for the game's prompt engineering details?**  
+> Check out [PROMPT.md](PROMPT.md) for the complete prompt engineering documentation and game design specifications.
 
-MirageOS is an immersive terminal-based game that simulates a hacking experience with a psychological twist. The game features:
+## 🎮 Game Overview
 
 - Authentic terminal interface with command-line interactions
 - Progressive access flow: local guest → local root → local admin → company guest → company root
